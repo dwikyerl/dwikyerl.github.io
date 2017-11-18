@@ -76,3 +76,8 @@ button:hover {
   max-width: 600px;
 }
 
+@media (max-width: 800px) {
+  #message {
+    width: 30%;
+  }
+}
