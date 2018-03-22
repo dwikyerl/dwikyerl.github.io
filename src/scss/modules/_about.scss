@@ -1,0 +1,23 @@
+.profile {
+  &__content {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    flex-flow: column nowrap;
+  }
+
+  &__image {
+    border-radius: 3px;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
+    margin-bottom: 2rem;
+    width: 20rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}

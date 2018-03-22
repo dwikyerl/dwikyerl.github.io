@@ -45,8 +45,16 @@ const css = {
 };
 
 const images = {
-  test: /\.(png|jpg)$/,
-  loader: "url-loader"
+  test: /\.(png|jp(e*)g|svg)$/,
+  use: [
+    {
+      loader: "url-loader",
+      options: {
+        limit: 8000, // Convert images < 8kb to base64 strings
+        name: "images/[hash]-[name].[ext]"
+      }
+    }
+  ]
 };
 
 module.exports = merge(common, {
@@ -59,7 +67,7 @@ module.exports = merge(common, {
       filename: "./../index.html"
     }),
     new ExtractTextPlugin({
-      filename: "css/main.css"
+      filename: "main.css"
     })
   ]
 });
