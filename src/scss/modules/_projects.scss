@@ -1,0 +1,18 @@
+.projects {
+  background-color: $color-primary;
+  padding-top: 4rem;
+  
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  &__announcement {
+    font-size: 3.5rem;
+    color: $color-white;
+    text-align: center;
+  }
+}

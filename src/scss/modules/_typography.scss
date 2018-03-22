@@ -14,6 +14,12 @@
   letter-spacing: 0.4rem;
   transition: all 0.2s;
 
+  &--white {
+    background-image: none;
+    background-clip: border-box;
+    color: $color-white;
+  }
+
   &:hover {
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
