@@ -1,11 +1,4 @@
-body {
-  @media (max-width: 600px) {
-    font-size: 20%;
-  }
-}
-
-p {
-  @media (max-width: 600px) {
-    color: blue;
-  }
-}
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "base/base";
+@import "modules/site-header";

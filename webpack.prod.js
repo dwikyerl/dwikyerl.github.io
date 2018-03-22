@@ -1,14 +1,9 @@
-const path = require("path");
+const merge = require("webpack-merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require("path");
 
-const javascript = {
-  test: /\.js$/,
-  exclude: /node_modules/,
-  use: {
-    loader: "babel-loader"
-  }
-};
+const common = require("./webpack.common");
 
 const html = {
   test: /\.html$/,
@@ -48,14 +43,9 @@ const css = {
   })
 };
 
-module.exports = {
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    watchContentBase: true,
-    historyApiFallback: true
-  },
+module.exports = merge(common, {
   module: {
-    rules: [javascript, html, scss, css]
+    rules: [html, scss, css]
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -66,4 +56,4 @@ module.exports = {
       filename: "css/main.css"
     })
   ]
-};
+});

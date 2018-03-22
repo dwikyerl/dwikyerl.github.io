@@ -20,7 +20,7 @@ $breakpoint argument choices:
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       @content;
     }
   }
@@ -42,4 +42,11 @@ $breakpoint argument choices:
       @content;
     }
   }
+}
+
+@mixin wrapper {
+  max-width: 1236px;
+  overflow: hidden;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
 }
