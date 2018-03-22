@@ -1,0 +1,61 @@
+.hero {
+  padding-top: 70px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("./images/hero_background.jpg");
+  background-size: cover;
+  background-position: bottom;
+
+  &__content {
+    backface-visibility: hidden;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    animation: moveInBottom 1s ease-out;
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 2rem;
+  }
+
+  &__subtitle {
+    color: $color-white;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+
+  &__social-icons {
+    i {
+      transition: all 0.2s ease-out;
+    }
+
+    a,
+    a:link,
+    a:visited {
+      color: $color-white;
+      font-size: 3.5rem;
+      text-decoration: none;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+
+    i:hover {
+      color: $color-primary-dark;
+      text-shadow: 0 1.5rem 2rem rgba($color-black, 0.4);
+      transform: scale(1.2);
+    }
+  }
+}

@@ -25,7 +25,8 @@ const scss = {
         options: { minimize: true }
       },
       { loader: "postcss-loader" },
-      { loader: "sass-loader" }
+      { loader: "resolve-url-loader" },
+      { loader: "sass-loader?sourceMap" }
     ]
   })
 };
@@ -43,9 +44,14 @@ const css = {
   })
 };
 
+const images = {
+  test: /\.(png|jpg)$/,
+  loader: "url-loader"
+};
+
 module.exports = merge(common, {
   module: {
-    rules: [html, scss, css]
+    rules: [html, images, scss, css]
   },
   plugins: [
     new HtmlWebpackPlugin({

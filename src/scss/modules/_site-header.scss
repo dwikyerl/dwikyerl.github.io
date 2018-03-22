@@ -5,6 +5,8 @@
   width: 100%;
   padding: 1.5rem 4rem;
   box-shadow: 0rem 0.2rem 4rem rgba($color-black, 0.1);
+  background-color: $color-white;
+  animation: fadeIn 1s ease-out;
 
   @include respond(phone) {
     flex-direction: column;
