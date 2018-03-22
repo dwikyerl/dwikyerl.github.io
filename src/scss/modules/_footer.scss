@@ -1,0 +1,10 @@
+.footer {
+  background-color: $color-gray-dark-3;
+  padding: 1rem 0;
+  text-align: center;
+
+  &__copyright {
+    margin: 0;
+    color: $color-white;
+  }
+}
