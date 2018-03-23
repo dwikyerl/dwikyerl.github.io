@@ -1,9 +1,11 @@
 # dwikyerl.github.io
 
-> > [dwikyer.github.io](https://dwikyerl.github.io)
+> Live Site [dwikyer.github.io](https://dwikyerl.github.io)
+
+> Development Branch
 
 * About This Site
-* Used Tags and Syntaxes
+* Future Plans
 * About Me
 
 ## About this site
@@ -11,7 +13,10 @@
 This site is my portfolio site. This site is under development for next 5 months so
 there will be a lot of updates to this site.
 
-## Used Tags and Syntaxes
+## Future Plans
+- Add projects
+
+- Add blog
 
 ## About Me
 
