@@ -2,10 +2,10 @@
 
 > Live Site [dwikyer.github.io](https://dwikyerl.github.io)
 
-> Development Branch
+> Master Branch
 
 * About This Site
-* Future Plans
+* Used Tools
 * About Me
 
 ## About this site
@@ -13,10 +13,11 @@
 This site is my portfolio site. This site is under development for next 5 months so
 there will be a lot of updates to this site.
 
-## Future Plans
-- Add projects
+## Used Tools
 
-- Add blog
+* Webpack (Module Bundler)
+
+* SASS (CSS-Preprocessor)
 
 ## About Me
 
