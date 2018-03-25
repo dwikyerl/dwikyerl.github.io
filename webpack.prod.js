@@ -45,7 +45,7 @@ const css = {
 };
 
 const images = {
-  test: /\.(png|jp(e*)g|svg)$/,
+  test: /\.(png|jp(e*)g|svg|ico)$/,
   use: [
     {
       loader: "url-loader",
@@ -64,7 +64,8 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      filename: "./index.html"
+      filename: "./index.html",
+      favicon: "./src/images/favicon.ico"
     }),
     new ExtractTextPlugin({
       filename: "main.css"
